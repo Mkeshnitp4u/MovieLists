@@ -1,6 +1,6 @@
 import { put, takeLatest, call } from "redux-saga/effects";
 import * as types from "../actions/actionTypes";
-import MovieAPI from "../../NetworkUtility/api";
+import MovieAPI from "../../Utills/api";
 let API_KEY = "14c16d56f2647e61c2faef5355014969"
 export const FETCH_POPULAR_MOVIE = `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&page=`
 

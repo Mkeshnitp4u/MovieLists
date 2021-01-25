@@ -19,18 +19,23 @@ import {
   LoginButton,
   DividerWrapper
 } from './Login.style';
-import firebase from '../../../Utills/Firebase/config'
+import {db} from '../../../Utills/Firebase/config'
 
 const Login = ({ navigation }) => {
 
 useEffect(() => {
-  const login = firebase.database().ref('/user')
-  const userCred= {
-    userName:"Mukesh",
-    password:"Muk@1994"
-  }
+  
+  // const login = firebase.database().ref('/user')
+  // const userCred= {
+  //   userName:"Mukesh",
+  //   password:"Muk@1994"
+  // }
   return () => {
-    login.push(userCred)
+ return(   
+  db.ref('/items').push({
+    name: "Mukesh"
+  })
+ )
   }
 }, [])
 
@@ -64,6 +69,8 @@ useEffect(() => {
             type="outline"
             onPress={() => navigation.navigate('Tabs')}
           />
+
+
           <DividerView>
             <DividerWrapper/>
             <OrTextElemt>
