@@ -1,0 +1,27 @@
+const COLORS = {
+    transparent: "rgba(0,0,0,0)",
+    OTP_BORDER_COLOR: "rgba(226, 226, 226, 1)",
+    primary: '#9C27B0',
+    secondary: '#ca71eb',
+    white: '#ffffff',
+    black: '#242424',
+    grey0: '#393e42',
+    grey1: '#43484d',
+    grey2: '#5e6977',
+    grey3: '#86939e',
+    grey4: '#bdc6cf',
+    grey5: '#e1e8ee',
+    greyOutline: '#bbb',
+    searchBg: '#303337',
+    success: '#52c41a',
+    error: '#ff190c',
+    warning: '#faad14',
+    disabled: 'hsl(208, 8%, 90%)',
+    blue: '#4c53dd',
+    purple: '#a238e5',
+    pink: '#e538ab',
+    green: '#3ee538',
+    yellow: '#e5ba38',
+  };
+  
+  export default COLORS;
